@@ -97,6 +97,10 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
+  body {
+    -webkit-padding-before: 18rem;
+            padding-block-start: 18rem;
+  }
   .cards {
     max-width: 111rem;
     padding-bottom: 0;
@@ -128,7 +132,6 @@ body {
             padding-inline-start: 6rem;
     -webkit-padding-end: 11rem;
             padding-inline-end: 11rem;
-    padding-top: 6.5rem;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -141,6 +144,8 @@ body {
     display: initial;
   }
   .content header h2 {
+    -webkit-margin-before: 8rem;
+            margin-block-start: 8rem;
     font-size: 38px;
     line-height: 42px;
     letter-spacing: -0.02em;

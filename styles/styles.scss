@@ -95,6 +95,10 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
+  body {
+    padding-block-start: 18rem;
+  }
+  
   .cards {
     max-width: 111rem;
     padding-bottom: 0;
@@ -116,7 +120,6 @@ body {
     margin-block-start: 0;
     padding-inline-start: 6rem;
     padding-inline-end: 11rem;
-    padding-top:6.5rem;
     align-self: center;
     text-align: left;
   }
@@ -130,6 +133,7 @@ body {
   }
 
   .content header h2 {
+    margin-block-start: 8rem;
     font-size: 38px;
     line-height: 42px;
     letter-spacing: -0.02em;
