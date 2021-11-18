@@ -28,13 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
+![Screenshot](./starterInstructions/screenshot/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Live Site URL](https://statpreviewcard-kc.netlify.app/)
+- [Github Solution URL](https://github.com/kchettiar1/statsPreviewCard)
 
 ## My process
 
@@ -47,42 +46,23 @@ Users should be able to:
 
 ### What I learned
 
-1. Using "filter" & "mix-blend-mode"
-2. Manipulating the layout for mobile vs desktop
+1. Manipulating the layout for mobile vs desktop
+2. Using "filter" & "mix-blend-mode"
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
+```scss
+.card img {
+  border-radius: 15px 15px 0 0;
+  mix-blend-mode: multiply;
+  filter: opacity(0.8);
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉');
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-
+Work more with: SCSS | Image overlays | Flexbox.
 
 ## Author
 
 - Website - [KC](https://kchettiar.com)
 - Frontend Mentor - [@kchettiar1](https://www.frontendmentor.io/profile/kchettiar1)
 - Twitter - [@kchettiar1](https://twitter.com/kchettiar1)
-
