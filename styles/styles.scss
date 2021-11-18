@@ -15,20 +15,19 @@ $font-body: 'Lexend Deca', sans-serif;
 // BODY
 body {
   background: $main-background;
-  max-width: $view-desktop;
-  min-width: $view-mobile;
-  // margin: 9rem 1.6rem 9rem 1.6rem;
-  padding-block-start: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 // CARD
 .cards {
-  max-width: 32.5rem;
-  margin: 0 auto;
-  border-radius: 15px 15px 15px 15px;
+  max-width: $view-mobile;
+  margin: 8.5rem 2.4rem 0 2.4rem;
+  border-radius: 15px;
   background: $card-background;
   text-align: center;
-  padding-bottom: 3.5rem;
 }
 
 .card {
@@ -39,7 +38,6 @@ body {
 .card-image {
   border-radius: 15px 15px 0 0;
   background: $accent;
-  // border: 1px solid white;
   order: 0;
 }
 
@@ -48,7 +46,7 @@ body {
 }
 
 .card img {
-  border-radius: 25px 25px 0 0;
+  border-radius: 15px 15px 0 0;
   mix-blend-mode: multiply;
   filter: opacity(0.8);
 }
@@ -56,14 +54,14 @@ body {
 .content {
   color: $main-paragraph;
   font-family: $font-body;
-  margin-block-start: 4rem;
-  // border: 1px solid white;
+  margin-block-start: 3.4rem;
 }
 
 .content header h2 {
   color: $main-heading;
   font-family: $font-headers;
   padding: 0 2rem;
+  margin-block-end: 0.4rem;
   font-size: 3rem;
   line-height: 3.2rem;
 }
@@ -73,35 +71,36 @@ body {
 }
 
 .card-stats {
-  // border: 1px solid greenyellow;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
 .content > p {
-  padding: 0 3.5rem;
+  padding: 0 3.5rem 4.2rem 3.5rem;
+  margin: 0;
   font-size: 1.5rem;
   line-height: 2.6rem;
   letter-spacing: 0.08rem;
 }
 .content .card-stats h3 {
   color: $main-heading;
-  margin: 0;
-  padding-bottom: 1rem;
+  font-size: 2.2rem;
+  line-height: 27px;
+  margin-block-end: 1rem;
 }
 .content .card-stats p {
   color: $main-paragraph;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0 0 3rem 0;
 }
 
 @media screen and (min-width: 1440px) {
-  body {
-    padding-block-start: 18rem;
-  }
-  
   .cards {
-    max-width: 111rem;
-    padding-bottom: 0;
+    max-width: 110rem;
+    margin: 0;
   }
 
   .card {
@@ -110,18 +109,25 @@ body {
 
   .card-image {
     order: 1;
-    align-self: center;
-    border-radius: 0;
-    width: 54rem;
+    border-radius: 0 15px 15px 0;
+    width: 53.5rem;
   }
   .content {
     order: 0;
     width: 56rem;
     margin-block-start: 0;
-    padding-inline-start: 6rem;
-    padding-inline-end: 11rem;
     align-self: center;
     text-align: left;
+  }
+
+  .content header {
+    padding: 0 6rem 0 8rem;
+  }
+
+  .content > p {
+    padding: 0 13rem 7rem 8rem;
+    font-size: 14px;
+    line-height: 25px;
   }
 
   .card-image .mobile {
@@ -133,29 +139,27 @@ body {
   }
 
   .content header h2 {
-    margin-block-start: 8rem;
     font-size: 38px;
     line-height: 42px;
     letter-spacing: -0.02em;
     padding: 0;
-  }
 
-  .content > p {
-    padding: 0;
   }
 
   .card-stats {
-    margin-top: 6rem;
-    align-self: center;
+    margin-left: 8rem;
+    justify-content: left;
     flex-direction: row;
   }
 
   .card-stats h3 {
-  // .card-stats p:nth-child(2) {
     padding-right: 6.5rem;
     font-size: 2.8rem;
   }
 
+  .card-stats p {
+    margin-bottom: 0;
+  }
 }
 
 /* FRONTEND MENTOR ATTRIBUTION STYLES */
